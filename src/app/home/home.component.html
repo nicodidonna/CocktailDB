@@ -1,0 +1,18 @@
+<div class="my-5"></div>
+
+<div class="text-center my-2">
+    <h4>Cerca il cocktail dal Nome</h4>
+    <input type="text" [(ngModel)]="nomeCocktail"><button type="button" class="btn btn-dark mx-2" (click)="goToCocktailListByName()">Cerca</button>
+</div>
+
+<div class="text-center my-4">
+    <h4>Lista dei cocktail in base alla prima lettera</h4>
+    <input type="text" [(ngModel)]="primaLettera"><button type="button" class="btn btn-dark mx-2" (click)="goToCocktailListByLetter()">Cerca</button>
+</div>
+
+<div class="text-center my-4">
+    <h4>Guarda un cocktail a caso</h4>
+    <button type="button" class="btn btn-dark mx-2">Cerca</button>
+</div>
+
+<h1>{{nomeCocktail}}</h1>

@@ -1,0 +1,22 @@
+<div class="container">
+
+    <h1 class="my-5 text-center">ECCO A TE UN COCKTAIL A CASO</h1>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col"></div>
+        <div class="col">
+          <div class="card h-100" *ngFor="let drink of randomDrink">
+            <img src="{{drink.strDrinkThumb}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{drink.strDrink}}</h5>
+              <p class="card-text">{{drink.strInstructionsIT}}</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">{{drink.strCategory}}</small>
+            </div>
+          </div>
+        </div>
+        <div class="col"></div>
+      </div>
+    
+    </div>

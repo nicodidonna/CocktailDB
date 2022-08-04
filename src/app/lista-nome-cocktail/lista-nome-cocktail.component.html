@@ -1,0 +1,24 @@
+<div class="container">
+
+<h1 class="my-5 text-center">LISTA DEI DRINK CONTENTENTI IL NOME CERCATO</h1>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Drink</th>
+        <th scope="col">Categoria</th>
+        <th scope="col">Istruzioni</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let drink of drinksByName">
+        <th scope="row">{{drink.idDrink}}</th>
+        <td>{{drink.strDrink}}</td>
+        <td>{{drink.strCategory}}</td>
+        <td>{{drink.strInstructionsIT}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
