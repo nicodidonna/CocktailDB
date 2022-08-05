@@ -1,18 +1,18 @@
 <div class="my-5"></div>
 
 <div class="text-center my-2">
-    <h4>Cerca il cocktail dal Nome</h4>
+    <h4>Ricerca il cocktail dal Nome</h4>
     <input type="text" [(ngModel)]="nomeCocktail"><button type="button" class="btn btn-dark mx-2" (click)="goToCocktailListByName()">Cerca</button>
+    <p *ngIf="nomeVuoto" style="color:red" class="my-1">Il campo è vuoto, scrivi il nome di un Cocktail.</p>
 </div>
 
 <div class="text-center my-4">
     <h4>Lista dei cocktail in base alla prima lettera</h4>
     <input type="text" [(ngModel)]="primaLettera"><button type="button" class="btn btn-dark mx-2" (click)="goToCocktailListByLetter()">Cerca</button>
+    <p *ngIf="letteraVuota" style="color:red" class="my-1">Il campo è vuoto, scrivi una lettera da cercare.</p>
 </div>
 
 <div class="text-center my-4">
-    <h4>Guarda un cocktail a caso</h4>
-    <button type="button" class="btn btn-dark mx-2">Cerca</button>
+    <h4>Un cocktail a caso</h4>
+    <button type="button" class="btn btn-dark mx-2" routerLink="/random-cocktail">Cerca</button>
 </div>
-
-<h1>{{nomeCocktail}}</h1>

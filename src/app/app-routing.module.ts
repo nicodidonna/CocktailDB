@@ -7,6 +7,11 @@ import { ListaNomeCocktailComponent } from './lista-nome-cocktail/lista-nome-coc
 
 const routes: Routes = [
   {
+    path: "",
+    redirectTo: "home",
+    pathMatch: "full"
+  },
+  {
     path: "home",
     component: HomeComponent
   },
@@ -27,7 +32,7 @@ const routes: Routes = [
     component: ListaLetteraCocktailComponent
   },
   {
-    path: "random-cocktail-list",
+    path: "random-cocktail",
     component: ListaCocktailRandomComponent
   }
 ];
