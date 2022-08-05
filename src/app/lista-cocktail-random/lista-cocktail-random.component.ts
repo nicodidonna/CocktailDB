@@ -25,4 +25,8 @@ export class ListaCocktailRandomComponent implements OnInit {
     })
   }
 
+  refreshPage(){
+    window.location.reload();
+  }
+
 }
