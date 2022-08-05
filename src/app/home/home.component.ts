@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 import { Location } from "@angular/common";
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -13,8 +14,12 @@ export class HomeComponent implements OnInit {
   primaLettera: string|null = "";
   nomeVuoto: boolean;
   letteraVuota: boolean;
+  form : FormGroup;
 
-  constructor(private route: ActivatedRoute, private router: Router, private location: Location) { 
+  constructor(private route: ActivatedRoute, private router: Router, private location: Location, private fb : FormBuilder) { 
+    this.form = fb.group({
+      'lettera' : ["",Validators.maxLength(1)]
+    })
   }
 
   ngOnInit(): void {

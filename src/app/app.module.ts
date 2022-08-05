@@ -8,7 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { ListaNomeCocktailComponent } from './lista-nome-cocktail/lista-nome-cocktail.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ListaLetteraCocktailComponent } from './lista-lettera-cocktail/lista-lettera-cocktail.component';
 import { ListaCocktailRandomComponent } from './lista-cocktail-random/lista-cocktail-random.component';
 
@@ -26,7 +26,8 @@ import { ListaCocktailRandomComponent } from './lista-cocktail-random/lista-cock
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

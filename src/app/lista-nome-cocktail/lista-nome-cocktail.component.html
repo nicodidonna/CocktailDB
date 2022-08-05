@@ -1,6 +1,7 @@
 <div class="container">
 
-  <h1 class="my-5 text-center">LISTA DEI DRINK CONTENTENTI LA PAROLA CERCATA</h1>
+  <h1 class="my-5 text-center" *ngIf="drinksByName">LISTA DEI DRINK CONTENTENTI LA PAROLA CERCATA</h1>
+  <h1 class="my-5 text-center" style="color:red" *ngIf="!drinksByName">NON CI SONO RISULTATI PER LA RICERCA EFFETTUATA</h1>
   
   <div class="row">
 

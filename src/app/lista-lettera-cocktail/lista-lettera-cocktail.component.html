@@ -1,7 +1,8 @@
 <div class="container">
 
   
-  <h1 class="my-5 text-center">LISTA DEI DRINK CHE INIZIANO CON LA LETTERA CERCATA</h1>
+  <h1 class="my-5 text-center"  *ngIf="drinksByLetter">LISTA DEI DRINK CHE INIZIANO CON LA LETTERA CERCATA</h1>
+  <h1 class="my-5 text-center" style="color:red" *ngIf="!drinksByLetter">NON CI SONO RISULTATI PER LA RICERCA EFFETTUATA</h1>
   
   <div class="row">
 
